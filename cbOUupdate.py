@@ -24,4 +24,4 @@ config.read('config.ini')
 #sisList =  pd.read_csv(config['hostpath']['hostPath'] + config['hostpath']['fileName'], index_col='StudentID')
 sisList =  pd.read_csv(config['hostpath']['hostPath'] + \
                         config['hostpath']['fileName'], index_col='StudentID')
-print(sisList.iat[0,0])
+print(sisList.iat[0,0].str[:4].astype('int'))
