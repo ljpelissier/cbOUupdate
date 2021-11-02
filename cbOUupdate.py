@@ -15,4 +15,4 @@ YEAROFFSET = 9  #9 for 8th grade 13 for High School
 config = configparser.ConfigParser()
 config.read('config.ini')
 
-print(config)
+print(config['hostpath']['hostpath'])
