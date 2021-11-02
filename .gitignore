@@ -3,6 +3,12 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+credentials.json
+token.pickle
+geckodriver.log
+TonerCheck.html
+*.ini
+
 # C extensions
 *.so
 
