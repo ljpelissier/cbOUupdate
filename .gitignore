@@ -9,8 +9,6 @@ geckodriver.log
 TonerCheck.html
 *.ini
 
-
-# C extensions
 *.so
 
 # Distribution / packaging
