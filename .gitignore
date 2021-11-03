@@ -8,6 +8,7 @@ token.pickle
 geckodriver.log
 TonerCheck.html
 *.ini
+*.google
 
 *.so
 
