@@ -2,8 +2,8 @@
 """
  author: Louis Pelssier
 
-   This makes sure serial numbers associated with students is 
-   updated in the correct OU in the google admin panel
+   This makes sure serial numbers associated with students are 
+   updated in the correct OU in the google admin panel.
    To be run every 15 minutes.
    
    Separate script will remove unassociated chomebooks from
