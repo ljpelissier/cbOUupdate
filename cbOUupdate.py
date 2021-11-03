@@ -74,10 +74,10 @@ for ind in sisList.index:
 
         gamCommand = f"/home/administrator/bin/gamadv-xtd3/gam cros_sn {sisList['CurrentSerialNumber'][ind]} update ou {sisList['OUroot'][ind]}ClassOf{ouForGradeLevel}"
         print(gamCommand)
-        #args = shlex.split(gamCommand)
-        #googleOutput = subprocess.Popen(args, stdout=subprocess.PIPE, stderr=subprocess.STDOUT   )
-        #standerdout,standarderr = googleOutput.communicate()
-        #standerdout = standerdout.decode("utf-8")
+        args = shlex.split(gamCommand)
+        googleOutput = subprocess.Popen(args, stdout=subprocess.PIPE, stderr=subprocess.STDOUT   )
+        standerdout,standarderr = googleOutput.communicate()
+        standerdout = standerdout.decode("utf-8")
         print("cb move attempted")
 
 
