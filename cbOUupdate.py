@@ -69,19 +69,13 @@ for ind in sisList.index:
         pass
     else:
         ouForGradeLevel = CurrentYearWithOffset - int(sisList['GradeLevel'][ind])
-        print(f"put sn {sisList['CurrentSerialNumber'][ind]} in ou {sisList['OUroot'][ind]}ClassOf{ouForGradeLevel}")
         count +=1
 
         gamCommand = f"/home/administrator/bin/gamadv-xtd3/gam cros_sn {sisList['CurrentSerialNumber'][ind]} update ou {sisList['OUroot'][ind]}ClassOf{ouForGradeLevel}"
-        print(gamCommand)
         args = shlex.split(gamCommand)
         googleOutput = subprocess.Popen(args, stdout=subprocess.PIPE, stderr=subprocess.STDOUT   )
         standerdout,standarderr = googleOutput.communicate()
         standerdout = standerdout.decode("utf-8")
-        print("cb move attempted")
+        
 
 
-
-
-print(sisList)
-print(count)
