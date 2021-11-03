@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
  author: Louis Pelssier
- 
- 
+ Hi
+ is this today?
 """
 import configparser
 import os
