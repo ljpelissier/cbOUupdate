@@ -29,7 +29,7 @@ config = configparser.ConfigParser()
 config.read('config.ini')
 
 #load in data from SIS with student serial numbers
-sisList =  pd.read_csv(config['hostpath']['hostPath'] + \
+sisList =  pd.read_csv(config['hostpath']['filePath'] + \
                         config['hostpath']['fileName'], index_col='StudentID')
 sisList['GradeLevel'] = sisList['GradeLevel'].replace('KF','00')
 

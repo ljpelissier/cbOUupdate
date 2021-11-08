@@ -9,6 +9,7 @@ geckodriver.log
 TonerCheck.html
 *.ini
 *.google
+*.log
 
 *.so
 
